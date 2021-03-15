@@ -1,0 +1,14 @@
+{
+    "require": {
+        "monolog/monolog": "^2.2",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "classmap": [
+            "app/"
+        ],
+        "files": [
+            "app/helpers.php"
+        ]
+    }
+}
