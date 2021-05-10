@@ -7,10 +7,10 @@ use App\Core\Router;
 require '_init.php';
 
 Router::make()
-    ->get('/', [TaskController::class, 'index'])
-    ->post('/create', [TaskController::class, 'store'])
-    ->get('/update', [TaskController::class, 'update'])
-    ->get('/delete', [TaskController::class, 'delete'])
+    ->get('', [TaskController::class, 'index'])
+    ->post('task/create', [TaskController::class, 'create'])
+    ->get('task/update', [TaskController::class, 'update'])
+    ->get('task/delete', [TaskController::class, 'delete'])
     ->resolve(
         Request::uri(),
         Request::method()
