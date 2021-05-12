@@ -37,7 +37,7 @@ class Router
 
     protected function callAction($controller, $action)
     {
-        $controller = new $controller; // Craete controlloer object.
+        $controller = new $controller; // Create controller object.
         $controller->{$action}();
     }
 
